@@ -1,0 +1,9 @@
+b=122
+c=50
+print(b,c)
+print(b+c)
+print(b-c)
+print(b*c)
+print(b//c)
+print(2**3)
+print(3**3)
