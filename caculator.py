@@ -7,9 +7,15 @@ def div(g,c):
     print(g/c) 
 def multi(g,c):
     print(g*c)
+def modulous(g,c):
+    print(g%c)
+def floordivsion(g,c):
+    print(g//c)
+        
+
 m=int(input("enter the first numero"))          
 b=int(input("enter the second numero")) 
-s= input("select a symbol -,+,/,*")
+s= input("select a symbol -,+,/,%,*,//")
 if s=="+":
     
     add(m,b)
@@ -23,6 +29,12 @@ elif s=="-":
 elif s=="*":
     
     multi(m,b)
+elif s=="%":
+    
+    modulous(m,b)
+elif s=="//":
+    
+    floordivsion(m,b)    
     
     
     
