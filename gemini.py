@@ -1,57 +1,42 @@
-WIDTH = 10
-HEIGHT = 10
+import time 
+score = 0
+player_name = ("Input your name:")
+print(player_name + "!Lets test your knowledge")
+print("you wil get 10 points fro each correct answer")
+time.sleep(1)
+questions [
+    {
+        "question":"1. what is the output of (2==3)?"
+        "Options":"a.6/n b.8 c.7"
+        "answer":"b"
+    }
+    {
+       "question":"what is the square of 2"
+        "Options":"a.4/n b.40 c.6"
+        "answer":"a" 
+    }
+    {
+       "question":"what is the square of 4"
+        "Options":"a.15/n b.4 c.16"
+        "answer":"c"  
+    }
+    {
+        "question":"what is 2+3"
+        "Options":"a.15/n b.5 c.16"
+        "answer":"b"  
+    }
+    {
+        "question":"what is 56-678796897"
+        "Options":"a.-678796897/n b.5 c.16"
+        "answer":"a"  
+    }
 
-# World initialization
-world = [["." for _ in range(WIDTH)] for _ in range(HEIGHT)]
-player_x = WIDTH // 2
-player_y = HEIGHT // 2
+]
+for q in questions:
+    print("/n"["questions"])
+    for options in q["options"]:
+        print(option)
 
-def print_world():
-    for y in range(HEIGHT):
-        row = ""
-        for x in range(WIDTH):
-            if x == player_x and y == player_y:
-                row += "@"
-            else:
-                row += world[y][x]
-        print(row)
-    print("-" * WIDTH)
-
-def move_player(direction):
-    global player_x, player_y
-    if direction == "w" and player_y > 0:
-        player_y -= 1
-    elif direction == "s" and player_y < HEIGHT - 1:
-        player_y += 1
-    elif direction == "a" and player_x > 0:
-        player_x -= 1
-    elif direction == "d" and player_x < WIDTH - 1:
-        player_x += 1
-
-def place_block():
-    world[player_y][player_x] = "#"
-
-def remove_block():
-    world[player_y][player_x] = "."
-
-# Game loop
-print("Simple Sandbox Game")
-print("Use W/A/S/D to move, B to build, R to remove, Q to quit.")
-print_world()
-
-while True:
-    command = input("Command: ").lower()
-
-    if command == "q":
-        print("Exiting game.")
-        break
-    elif command in ["w", "a", "s", "d"]:
-        move_player(command)
-    elif command == "b":
-        place_block()
-    elif command == "r":
-        remove_block()
-    else:
-        print("Invalid command!")
-
-    print_world()
+        while True
+        ans = input("enter your answer a/b/c").upper()
+        if ans in ["a","b","c"]
