@@ -1,0 +1,33 @@
+import pygame
+import random
+pygame.init()
+SPRITE_COLOR_CHANGE_EVENT = pygame.USEREVENT + 1
+BACKGROUND_COLOR_CHANGE_EVENT = pygame.USEREVENT + 2
+BLUE = pygame.Color("blue")
+LIGHTBLUE = pygame.Color('lightblue')
+DARKBLUE = pygame.Color('darkblue')
+YELLOW = pygame.Color('yellow')
+MAGENTA = pygame.Color('magenta')
+ORANGE = pygame.Color('orange')
+class Sprite(pygame.sprite.Sprite):
+  def _init_(self, color, height, width):
+    super()._init_()
+    self.image = pygame.Surface([width, height])
+    self.image.fill(color)
+    self.rect = self.image.get_rect()
+    def update(self):
+      boundary_hit = False
+      if self.rect.top <= 0 or self.rect.bottom >= 400:
+    self.velocit[1]= self.velocity[1]
+    boundary_hit = false
+    sp1 = Sprite(WHITE, 20, 30)
+    sp1.rect.x = randome.randit(0, 400)
+    pygame.display.set_caption("Boundary Sprite")
+    while not exit:
+      if event.type == pygame.QUIT
+      change_background_color()
+      pygame.display.flip()
+      clock.tick(240)
+pygame.quit()
+
+
